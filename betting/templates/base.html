@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="binance listing,ieo crypto,crypto calendar,binance launchpad,initial exchange offering,thunderbolt chain,upcoming crypto exchanges,ico exchange,ieo binance,best upcoming ico,blockchain stocks,cryptocurrency exchange,binance dex,Best IEO ongoing,best ico">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <title>Super Betting</title>
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142536437-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142536437-1');
+    </script>
+</head>
+<body>
+    <!-- top bar navbar  -->
+    {% include 'components/_navbar.html' %}
+    <!-- main content -->
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- footer  -->
+
+
+
+      <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+          <script src="{% static 'js/bootstrap.min.js' %}" ></script>
+           <script src="{% static 'js/custom.js' %}" ></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% load static %}
+ <section class="inner-section">
+      <div class="container">
+        <div class="wrapper-product-contact">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="">
+                <h5 class="wh-th text-center">Please Enter Your Team Detail's <br>Let's Play !!
+                </h5>
+                <div class="grid-holder-contact">
+                  <form action="{% url 'gameinfo' %}" method="POST">
+                      {% csrf_token %}
+                    <div class="form-group">
+                      <label for="">Id</label>
+                      <input type="" class="form-control"  name="temp_id" aria-describedby="" placeholder="Enter Id">
+
+                    </div>
+                    <div class="form-group">
+                      <label for="">First Name</label>
+                      <input type="" class="form-control" name="first_name" aria-describedby="" placeholder="Enter First Name">
+
+                    </div>
+                    <div class="form-group">
+                      <label for="">Last Name</label>
+                      <input type="" class="form-control" name="last_name" aria-describedby="" placeholder="Enter Last Name">
+
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Gender</label><br>
+                      Male <input type="radio" class="form-control" name="gender" value="m" aria-describedby="" >
+                      Female <input type="radio" class="form-control" name="gender" value="f" aria-describedby="" >
+
+                    </div>
+                   
+                    <div class="form-group">
+                      <label for="">Age</label>
+                      <input type="text" class="form-control"  name="age" aria-describedby="" placeholder="Enter Age">
+
+                    </div>
+                    <div class="form-group">
+                      <label for="">Singles</label>
+                      Singles <input type="checkbox" class="form-control" value="on" name="singles" aria-describedby="" >
+            
+
+                    </div>
+
+                    <div class="form-group">
+                      <label for=""></label>
+                      Doubles <input type="checkbox" class="form-control" value="on" name="doubles" aria-describedby="" >
+            
+
+                    </div>     <div class="form-group">
+                      <label for=""></label>
+                      mix_double <input type="checkbox" class="form-control" value="on" name="mix_double" aria-describedby="" >
+            
+
+                    </div>     <div class="form-group">
+                      <label for=""></label>
+                      All Mix Double <input type="checkbox" class="form-control" value="on" name="all_mix_double" aria-describedby="" >
+            
+
+                    </div>
+
+                   
+
+                    <button type="submit" class="btn btn-white">Submit</button>
+                  </form>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
